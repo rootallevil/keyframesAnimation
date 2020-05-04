@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        animation: carousel 10s infinite forwards ease-in-out;
+      }
+
+      @keyframes carousel {
+        0% {
+          background-image: url("./sea1.jpg");
+        }
+        33% {
+          background-image: url("./sea2.jpeg");
+        }
+        66% {
+          background-image: url("./p1.jpeg");
+        }
+        100% {
+          background-image: url("./sea1.jpg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>

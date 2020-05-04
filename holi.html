@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holi animation attempt</title>
+    <style>
+      body,
+      html {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #000, #000811);
+      }
+
+      .row {
+        display: flex;
+        height: 200px;
+      }
+
+      .blowOrange,
+      .blowWhite,
+      .blowGreen,
+      .blowPink,
+      .blowYellow,
+      .blowRed,
+      .blowBlue,
+      .blowCyan,
+      .blowBrown {
+        height: 0;
+        width: 0;
+        border-radius: 50%;
+        border: 0px solid #fff;
+        position: fixed;
+        animation: phutung 1s infinite forwards ease-out;
+      }
+
+      .blowBrown {
+        border: 0px solid #44ffb1;
+        animation-delay: 0.2s;
+        margin: 15vh 43vw;
+      }
+
+      .blowPink {
+        border: 0px solid #ff00ff;
+        animation-delay: 0.3s;
+        margin: 0 38vw;
+      }
+
+      .blowBlue {
+        border: 0px solid #157bff;
+        animation-delay: 0.5s;
+        margin: 0 50vw;
+      }
+
+      .blowOrange {
+        border: 0px solid #ff8800;
+        animation-delay: 0.6s;
+        margin: -50px 35vw;
+      }
+
+      .blowWhite {
+        border: 0px solid #fff;
+        margin: -50px 42vw;
+      }
+
+      .blowGreen {
+        border: 0px solid #00ff37;
+        animation-delay: 0.7s;
+        margin: -50px 48vw;
+      }
+
+      .blowYellow {
+        border: 0px solid #ffff00;
+        animation-delay: 0.9s;
+        margin: -130px 38vw;
+      }
+
+      .blowRed {
+        border: 0px solid #ff2222;
+        animation-delay: 0.1s;
+        margin: -150px 50vw;
+      }
+
+      .blowCyan {
+        border: 0px solid #00ffff;
+        animation-delay: 0.4s;
+        margin: -230px 43vw;
+      }
+
+      @keyframes phutung {
+        0% {
+          opacity: 1;
+          border-width: 75px;
+        }
+
+        60% {
+          opacity: 0;
+          height: 150px;
+          width: 150px;
+          border-width: 0px;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="blowBrown"></div>
+      </div>
+      <div class="row">
+        <div class="blowPink"></div>
+        <div class="blowBlue"></div>
+      </div>
+      <div class="row">
+        <div class="blowOrange"></div>
+        <div class="blowWhite"></div>
+        <div class="blowGreen"></div>
+      </div>
+      <div class="row">
+        <div class="blowYellow"></div>
+        <div class="blowRed"></div>
+      </div>
+      <div class="row">
+        <div class="blowCyan"></div>
+      </div>
+    </div>
+  </body>
+</html>

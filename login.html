@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        background: #ddd;
+        padding: 0 3vw;
+      }
+
+      .loginCard {
+        height: 60vh;
+        width: 30vw;
+        margin: auto;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        box-shadow: 3px 4px 6px #aaa;
+      }
+
+      .loginText {
+        background: #03b134;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        font-family: sans-serif;
+        color: #fff;
+        text-align: center;
+        animation: left-in 0.2s 1 forwards ease-in;
+      }
+
+      .loginText h1 {
+        font-weight: lighter;
+      }
+
+      .loginCard form {
+        display: flex;
+        flex-direction: column;
+        padding: 5vh;
+      }
+
+      .loginCard form input {
+        height: 5vh;
+        width: 80%;
+        margin: 1.2vh auto;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        padding: 2px 8px;
+        position: relative;
+        outline-color: #03b134;
+        animation: fade-in 0.5s 1 forwards ease-in;
+      }
+
+      .loginCard form input[type="submit"] {
+        background: #03b134;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 18px;
+        margin-top: 6vh;
+        height: 45px;
+        box-shadow: 2px 3px 4px #aaa;
+        width: 140px;
+        transition: 0.2s;
+      }
+
+      .loginCard form input[type="submit"]:hover {
+        background: #00661d;
+      }
+
+      .loginCard form a {
+        color: #00695c;
+        text-decoration: none;
+        width: 80%;
+        margin: auto;
+        margin-top: 1.5vh;
+      }
+
+      @keyframes left-in {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          margin-top: 20px;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loginCard">
+        <div class="loginText">
+          <h1>Login</h1>
+        </div>
+        <form action="./carousel.html">
+          <input type="text" placeholder="Username" />
+          <input type="text" placeholder="Password" />
+          <a href="./codepool.html">Forgot Password?</a>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
